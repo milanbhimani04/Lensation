@@ -1,0 +1,138 @@
+
+@import url("../dist/css/plugins/themify-icons.css");
+
+
+.adminp
+{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+div.frm, div.dis
+{
+    padding-top: 20px;
+    background-color: white;
+    height: 500px;
+    overflow: auto;
+}
+
+div.frm p, div.dis p
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sp
+{
+    width: 40px;
+}
+
+div.dis i{
+    cursor: pointer;
+}
+
+div.dis p i{
+    cursor: progress;
+}
+
+ul.paging 
+{
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul.paging li
+{
+    display: inline;
+    padding: 10px 13px;
+    background-color: #03a9f3;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: .25rem;
+}
+
+ul.paging li:hover{
+    padding: 10px 13px;
+    background-color: transparent;
+    color: #03a9f3;
+    cursor: pointer;
+    outline: 1px solid #03a9f3;
+}
+
+ul.paging li.active{
+    padding: 10px 13px;
+    background-color: transparent;
+    color: #03a9f3;
+    cursor: pointer;
+    outline: 1px solid #03a9f3;
+}
+
+div.dis table td.timage img{
+    max-height: 50px;
+}
+
+div.dis table td.pimage img{
+    max-height: 200px;
+}
+
+
+
+
+
+
+/*-----------------aa maru 6------------------*/
+
+.packover
+{
+    position: absolute;
+    background: rgba(0,0,0,0.1);
+    width: 95%;
+    height: 100%;
+    border-radius:10px;
+}
+.pack
+{
+    position: relative;
+    margin: 0px 0px 10px 0px;
+    height: 80%;
+}
+.pack img
+{
+    width: 95%;
+    height: 100%;
+}
+.packover p.tx
+{
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    line-height: 16px;
+    font-size: 15px;
+    height: 50px;
+}
+.packover p.txx
+{
+    color:#222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    line-height: 16px;
+    font-size: 15px;
+    height: 50px;
+}
+.packover p.pri
+{
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 10px;
+    line-height: 20px;
+    font-size: 15px;
+    height: 50px;
+    color: #fff;
+}
+
+
