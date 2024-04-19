@@ -204,3 +204,77 @@ class _showDataState extends State<showData> {
 
 
 ==============
+
+class _HomePageState extends State<HomePage> {
+  int SelectIndex = 0;
+  List student = [page1(),page2(),page3()];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: SelectIndex,
+        selectedItemColor: Colors.blue,
+        onTap: (value) {
+          setState(() {
+            SelectIndex = value;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: 'Message',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+        ],
+      ),
+      body: student[SelectIndex],
+
+
+===========================================================
+
+     drawer: Drawer(
+        backgroundColor: Colors.white60,
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+                accountName: Text('data'), accountEmail: Text('data')),
+            ListTile(
+              title: Text('ADD Data'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FormDataEx(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: Text('SHOW DATA'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => showData(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: Text('asd'),
+            ),
+            ListTile(
+              title: Text('GOSTHNC'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
