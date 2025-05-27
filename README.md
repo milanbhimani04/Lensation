@@ -67,8 +67,7 @@ Lensation/
 
 > Add actual images or use Markdown:
 ```
-![Home Page](screenshots/homepage.png)
-![Gallery](screenshots/gallery.png)
+
 ```
 
 ## 📬 Contact Form Command (PHP)
